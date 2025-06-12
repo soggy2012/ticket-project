@@ -148,7 +148,7 @@ body {
 
  input:focus {
     outline: none; /* Remove default blue outline */
-    border-color: #6f6fe0; /* Highlight border on focus */
+    border-color: #6f6fe0; 
     box-shadow: 0 0 0 2px rgba(111, 111, 224, 0.3); /* Subtle glow on focus */
 }
 
@@ -199,7 +199,7 @@ body {
  /* --- The Actual Ticket Visual (the card shape) --- */
 
  .ticket-visual {
-    background-image: url("../assets/images/pattern-ticket.svg");
+    background-image: url("assets/images/pattern-ticket.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -321,8 +321,8 @@ body {
       background-size: 100% 100%;
       background-position: center;
       width: 100%;
-      max-width: 350px;     /* ⬅️ Set your desired ticket width */
-      min-height: 180px;    /* ⬅️ Optional: height based on SVG */
+      max-width: 350px;     /* Set desired ticket width */
+      min-height: 180px;    /*  Optional: height based on SVG */
       margin: 0 auto;
       padding: 1.2rem;
 

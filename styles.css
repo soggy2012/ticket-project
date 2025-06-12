@@ -1,0 +1,338 @@
+ /* General layout */
+@font-face {
+    font-family: "Inconsolata";
+    src: url("assets/fonts/static/Inconsolata-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("assets/fonts/static/Inconsolata-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("assets/fonts/static/Inconsolata-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("assets/images/background-mobile.png");
+    background-size: cover;
+    color: white;
+    font-family: "Inconsolata";
+    min-height: 100vh;
+
+}
+
+
+/*Logo Title */
+
+.logo-title {
+    display: flex;
+    align-items: center;            /* Vertically align logo and text */
+    justify-content: center;         /* Center the entire block */
+    gap: 1rem;
+    margin: 2rem auto;
+}
+
+.logo-title img {
+    width: 1.5rem;
+    height: auto;
+}
+
+ h2 {
+    font-size: 1.5rem;
+ }
+
+/* Form Title */
+
+ h1 {
+    font-size: 1.8rem;
+ }
+ .title {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: 0 1.3rem;
+ }
+
+ .title h1 {
+    padding-bottom: 1rem;
+ }
+ .title p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #b7b6b5;
+ }
+
+ /*Main form */
+
+ .avatar-container h3 {
+    color: #dad8d7;
+    font-size: 1.4rem;
+    margin: 1rem 1rem;
+
+ }
+
+ .hidden-input {
+    display: none;
+ }
+
+ /* Styling for the custom upload area (the label) */
+ .upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #b7b6b5;
+
+    /* Appearance based on the image */
+    border: 2px dashed #dad8d7;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    margin: 1rem 1rem;
+    background-color: rgba(42, 42, 62, 0.6);
+ }
+
+ .upload-icon {
+    padding-bottom: 1rem;
+    
+ }
+
+ .upload-info {
+    font-size: 0.8rem;
+    color: #dad8d7;
+    margin: 1rem 1rem;
+    display: flex;
+    gap: 1rem;
+ }
+
+ /* Information section */
+
+ .information-container {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.3rem;
+    
+ }
+
+ input[type="text"],
+ input[type="email"] {
+    width: 100%;
+    padding: 1rem 1rem;
+    border: 2px solid #dad8d7;
+    border-radius: 8px;
+    background-color: rgba(42, 42, 62, 0.6);
+    color: #dad8d7;
+    font-size: 1rem;
+    appearance: none;
+ }
+
+ input:focus {
+    outline: none; /* Remove default blue outline */
+    border-color: #6f6fe0; /* Highlight border on focus */
+    box-shadow: 0 0 0 2px rgba(111, 111, 224, 0.3); /* Subtle glow on focus */
+}
+
+/* Button */
+
+ button[type="submit"] {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: hsl(7, 71%, 60%);
+    color: black;
+    font-family: "Inconsolata";
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+ }
+
+
+ /* Generated ticket */
+
+ #ticketDisplay {
+    margin: 0 2rem 1.3rem;
+    display: none;
+ }
+
+ .ticket-display h1{
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 2rem;
+
+ }
+
+ #ticketEmail {
+    color: hsl(7, 71%, 60%);
+ }
+
+ #emailConfirm {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #b7b6b5;
+    padding-bottom: 2rem;
+ }
+
+ /* --- The Actual Ticket Visual (the card shape) --- */
+
+ .ticket-visual {
+    background-image: url("../assets/images/pattern-ticket.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 1rem 1rem 1rem;
+    
+}
+
+.ticket-visual p {
+    font-size: 0.8rem;
+    color: #b7b6b5;
+    
+    
+}
+
+.ticket-header {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ticket-display {
+    text-align: left;
+}
+
+.ticket-details h2 {
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+.ticket-logo img {
+   width: 1.5rem;
+}
+
+.ticket-body {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+#ticketAvatarImg.avatar-ticket {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#ticketUserName {
+    font-size: 1.2rem;
+}
+
+.ticket-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-ticket {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ticket-user-info {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.ticket-github-name {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin: 0.2rem 0 0;
+}
+
+
+.ticket-number {
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 1.2rem;
+  color: #999;
+  opacity: 0.5;
+}
+
+.attribution {
+    text-align: center;
+    font-style: none;
+    padding: 2rem;
+}
+
+/* Desktop media query */
+
+@media (min-width: 768px) {
+   body {
+      background-image: url("assets/images/background-desktop.png");
+      
+   }
+   .title h1 {
+      font-size: 3rem;
+      text-align: center;
+      justify-content: center;
+   }
+
+   #ticketForm, #ticketDisplay {
+      max-width: 50%;
+      margin: 0 auto;
+   }
+
+   .ticket-visual {
+      background-size: 100% 100%;
+      background-position: center;
+      width: 100%;
+      max-width: 350px;     /* ⬅️ Set your desired ticket width */
+      min-height: 180px;    /* ⬅️ Optional: height based on SVG */
+      margin: 0 auto;
+      padding: 1.2rem;
+
+   }
+  
+   .ticket-display h1 {
+      font-size: 3rem;
+   }
+
+   #emailConfirm {
+      font-size: 1.2rem;
+   }
+}

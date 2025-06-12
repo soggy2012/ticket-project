@@ -13,7 +13,7 @@ This is a front-end challenge from [Frontend Mentor](https://www.frontendmentor.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Fully responsive layout (mobile and desktop)
 - User-friendly form with:
@@ -27,7 +27,7 @@ This is a front-end challenge from [Frontend Mentor](https://www.frontendmentor.
 
 ---
 
-## 🔧 Technologies Used
+##  Technologies Used
 
 - HTML5
 - CSS3
@@ -37,7 +37,7 @@ This is a front-end challenge from [Frontend Mentor](https://www.frontendmentor.
 
 ---
 
-## 🧠 What I Learned
+##  What I Learned
 
 - How to handle form validation with custom logic
 - Creating accessible form structures
@@ -45,7 +45,4 @@ This is a front-end challenge from [Frontend Mentor](https://www.frontendmentor.
 - Improving UI/UX through focus and hover states
 - Dealing with user-uploaded images in the browser
 
----
-
-## 📁 Folder Structure
 
